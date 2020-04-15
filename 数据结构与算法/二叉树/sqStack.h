@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "typedef.h"
 //5个常量定义
 #define TRUE 1
 #define FALSE 0
@@ -11,16 +11,17 @@
 #define ERROR 0
 #define OVERFLOW -1
 
-typedef int Status;
-typedef int StackDataType;
-
-typedef struct
-{   
-    StackDataType * elem;
-    int top;
-    int size;
-    int increment;
-}SqStack;
+//栈还有问题，如果栈初始化太小的话，栈中的数据莫名其妙变化。
+// typedef int Status;
+// //栈数据结构
+// typedef BinTree StackDataType;
+// typedef struct
+// {   
+//     StackDataType * elem;
+//     int top;
+//     int size;
+//     int increment;
+// }SqStack;
 
 //初始化栈
 Status initStack(SqStack &s, int size, int inc );

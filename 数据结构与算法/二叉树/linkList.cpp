@@ -71,7 +71,7 @@ Status travelList(LinkList &L)
     if(NULL == L || NULL == L->next) return OVERFLOW;
     for(LNode * p = L->next; NULL != p; p = p->next)
     {
-        printf("%d\t", p->data);
+        printf("%c ", p->data.data);
     }
     return OK;
 }

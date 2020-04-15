@@ -4,7 +4,7 @@
 int main()
 {
     int i;
-    ElemType e, data[LENGTH] = {1, 2, 3, 4, 5};
+    ListDataType e, data[LENGTH] = {1, 2, 3, 4, 5};
     LinkList L;
 
 	//显示测试值

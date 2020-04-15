@@ -8,7 +8,7 @@ int main()
     int increment = 5;
     int i = 5;
     //初始化测试
-    ElemType e, eArray[5] = { 1, 2, 3, 4, 5 };
+    StackDataType e, eArray[5] = { 1, 2, 3, 4, 5 };
 
 	//显示测试值
 	printf("---【顺序栈】---\n");
@@ -20,11 +20,11 @@ int main()
 	printf("\n");
 
 	//初始化顺序栈
-	if (!initStack(S, size, increment)) {
-		printf("初始化顺序栈失败\n");
-		exit(0);
-	}
-	printf("已初始化顺序栈\n");
+	// if (!initStack(S, size, increment)) {
+	// 	printf("初始化顺序栈失败\n");
+	// 	exit(0);
+	// }
+	// printf("已初始化顺序栈\n");
 
 
     //入栈
